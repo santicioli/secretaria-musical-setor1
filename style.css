@@ -1,3 +1,7 @@
 span.red{
     color: red;
 }
+
+.alert{
+    margin-top: 1rem;
+}
