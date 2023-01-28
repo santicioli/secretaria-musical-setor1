@@ -61,7 +61,7 @@ data = [
     },
     {church: 'Jardim Independência', 
         //gem:{day: '', hour:''},
-        local:{day: '1º domingo', hour:'16:00h'}
+        local:{day: '2º sábado', hour:'19:30h'}
     },
     {church: 'Jardim Maria Estela', 
         gem:{day: '3º sábado', hour: '16:00h'},
@@ -73,7 +73,7 @@ data = [
     },
     {church: 'Jardim Panorama', 
         gem:{day: '3º sábado', hour: '14:30h'},
-        local:{day: 'útimo sábado', hour:'19:30h'}
+        local:{day: 'útimo domingo', hour:'16:00h'}
     },
     {church: 'Jardim Planalto', 
         gem:{day: '3ª sexta-feira', hour: '20:00h'},
