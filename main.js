@@ -7,7 +7,7 @@ data = [
         //gem:{day: '', hour:''},
         local:{day: '1º sábado', hour:'17:00h'}
     },
-    {church: 'Baixada Do Glicério', 
+    {church: 'Baixada do Glicério', 
         //gem:{day: '', hour:''},
         local:{day: '1º sábado', hour:'17:00h'}
     },
@@ -51,7 +51,7 @@ data = [
         gem:{day: '3º sábado', hour: '09:30h'},
         local:{day: 'útimo sábado', hour:'19:30h'}
     },
-    {church: 'Jardim Da Glória', 
+    {church: 'Jardim da Glória', 
         //gem:{day: '', hour:''},
         local:{day: '4º domingo', hour:'16:00h'}
     },
@@ -93,7 +93,7 @@ data = [
     },
     {church: 'Jardim Yara', 
         //gem:{day: '', hour:''},
-        local:{day: '2º sábado', hour:'17:00h'}
+        local:{day: '3º sábado', hour:'19:30h'}
     },
     {church: 'Parque Santa Madalena', 
         gem:{day: 'última quinta-feira', hour: '20:00h'},
@@ -165,7 +165,7 @@ data = [
     },
     {church: 'Vila Independência', 
         //gem:{day: '', hour:''},
-        local:{day: '4º sábado', hour:'19:30h'}
+        local:{day: '4º domingo', hour:'16:00h'}
     },
     {church: 'Vila Livieiro', 
         gem:{day: '3ª segunda-feira', hour: '19:30h'},
