@@ -189,9 +189,6 @@ data = [
     },
 ]
 
-overall_church = document.getElementById("overall_church")
-overall_church.innerText = data.length
-
 data.forEach(element => {
     if(element.hasOwnProperty('gem')){
         let church = 
