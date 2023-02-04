@@ -1,5 +1,5 @@
 data = [
-    {church: 'Água Rasa', 
+    {church: 'Agua Rasa', 
         //gem:{day: '', hour:''},
         local:{day: '3º sábado', hour:'17:00h'}
     },
@@ -15,11 +15,11 @@ data = [
         //gem:{day: '', hour:''},
         local:{day: 'último domingo', hour:'16:00h'}
     },
-	{church: 'Belém', 
+	{church: '<a href="https://goo.gl/maps/gp4VdETQsbRZiH4x9">Belém</a>', 
         gem:{day: '2ª sexta-feira', hour:'19:30h'},
-        local:{day: '4º sábado', hour:'19:30h'}
+        local:{day: '4º sábado', hour:'19:30h'},
     },
-	{church: 'Bom Retiro', 
+	{church: '<a href="https://goo.gl/maps/DCdi4MBDcd7aV8TW8">Bom Retiro</a>',  
         gem:{day: 'todo o domingo', hour: '09:10h às 09:50h'},
         local:{day: '1º sábado', hour:'17:00h'}
     },
@@ -227,3 +227,37 @@ data.forEach(element => {
         $("#tb_local").append(church)
     }
 });
+
+$(document).ready(function() {
+    $('#data_gem').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true,
+        paging: false,
+        language: {
+            search: "Pesquisar:",
+            lengthMenu: "Show _MENU_ entries",
+            info: "Mostrando _TOTAL_ igreja(s)",
+            infoEmpty: "Mostrando 0 igreja",
+            infoFiltered: "(Filtradas de _MAX_)",
+            zeroRecords: "Nenhuma igreja encontrada",
+        },
+    } );
+
+    $('#data_local').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true,
+        paging: false,
+        language: {
+            search: "Pesquisar:",
+            lengthMenu: "Show _MENU_ entries",
+            info: "Mostrando _TOTAL_ igreja(s)",
+            infoEmpty: "Mostrando 0 igreja",
+            infoFiltered: "(Filtradas de _MAX_)",
+            zeroRecords: "Nenhuma igreja encontrada",
+        },
+    } );
+} );
