@@ -4,7 +4,7 @@ data = [
         local:{day: '3º sáb. às 17:00h', hour: ''}
     },
     {church: '<a href="https://goo.gl/maps/oZWGJamfHD1yu36K6">Americanópolis</a>', 
-        //gem:{day: '', hour:''},
+        gem:{day: '3º sex. às 20:00h', hour:''},
         local:{day: '1º sáb. às 17:00h', hour: ''}
     },
     {church: '<a href="https://goo.gl/maps/q38firHnsG44yPJS9">Baixada do Glicério</a>', 
