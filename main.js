@@ -20,7 +20,7 @@ data = [
         local:{day: '4º sáb. às 19:30h', hour: ''},
     },
 	{church: '<a href="https://goo.gl/maps/DCdi4MBDcd7aV8TW8">Bom Retiro</a>',  
-        gem:{day: 'todo o dom. às 09:10h', hour: ''},
+        gem:{day: 'todo o dom. às 09:10h <b>(final do GEM)</b>', hour: ''},
         local:{day: '1º sáb. às 17:00h', hour: ''}
     },
     {church: '<a href="https://goo.gl/maps/YiyrRsnXudyENdie6">Bosque da Saúde</a>', 
