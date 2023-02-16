@@ -12,8 +12,8 @@ data = [
         local:{day: '1º sáb. às 17:00h', hour: ''}
     },
     {church: '<a href="https://goo.gl/maps/h5k5VATu1q4Dbncz6">Barra Funda</a>', 
-        //gem:{day: '', hour:''},
-        local:{day: 'último dom. às 16:00h', hour: ''}
+        gem:{day: 'último sab. às 14:30h', hour:''},
+        local:{day: '1º dom. às 16:00h', hour: ''}
     },
 	{church: '<a href="https://goo.gl/maps/gp4VdETQsbRZiH4x9">Belém</a>', 
         gem:{day: '2ª sex. às 19:30h', hour: ''},
