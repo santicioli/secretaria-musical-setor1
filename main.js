@@ -91,6 +91,10 @@ data = [
         gem:{day: '1º sáb. às 10:30h <b>(final do GEM)</b>', hour: ''},
         local:{day: 'último dom. às 16:00h', hour: ''}
     },
+    {church: '<a href="https://goo.gl/maps/rS7zFcXcya9jzF8u5">Jardim São Savério</a>', 
+        //gem:{day: '', hour: ''},
+        local:{day: 'último dom. às 16:00h', hour: ''}
+    },
     {church: '<a href="https://goo.gl/maps/jKsr23T8JJPRZa7R6">Jardim Yara</a>', 
         //gem:{day: '', hour:''},
         local:{day: '3º sáb. às 19:30h', hour: ''}
