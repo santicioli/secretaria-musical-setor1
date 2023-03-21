@@ -83,10 +83,6 @@ data = [
         gem:{day: '3ª sex. às 19:30h', hour: ''},
         local:{day: '1º sáb. às 17:00h', hour: ''}
     },
-    {church: '<a href="https://goo.gl/maps/64iYaNrSfnaQ94uE7">Jardim São Roberto</a>', 
-        //gem:{day: '', hour:''},
-        local:{day: '1º sáb. às 19:30h', hour: ''}
-    },
     {church: '<a href="https://goo.gl/maps/45xcGxTEdY7NPyabA">Jardim São Roberto</a>', 
         gem:{day: '1º sáb. às 10:30h <b>(final do GEM)</b>', hour: ''},
         local:{day: 'último dom. às 16:00h', hour: ''}
