@@ -4,8 +4,8 @@ data = [
         local:{day: '3º sáb. às 17:00h', hour: ''}
     },
     {church: '<a href="https://goo.gl/maps/oZWGJamfHD1yu36K6">Americanópolis</a>', 
-        gem:{day: '3º sex. às 20:00h', hour:''},
-        local:{day: '1º sáb. às 17:00h', hour: ''}
+        gem:{day: '4º sex. às 20:00h', hour:''},
+        local:{day: '2º sáb. às 17:00h', hour: ''}
     },
     {church: '<a href="https://goo.gl/maps/q38firHnsG44yPJS9">Baixada do Glicério</a>', 
         //gem:{day: '', hour:''},
@@ -185,7 +185,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/D8KR16teYmprGFBn6">Vila Rio Branco</a>', 
         gem:{day: 'toda a seg. às 20:30h <b>(final do GEM)</b>', hour: ''},
-        local:{day: '1º dom. às 16:00h', hour: ''}
+        local:{day: '1º sab. às 19:30h', hour: ''}
     },
 ]
 
