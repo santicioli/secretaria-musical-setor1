@@ -121,7 +121,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/qH8TFubXB8QwQN57A">Sítio Pinheirinho</a>', 
         //gem:{day: '', hour:''},
-        local:{day: '1º sáb. às 19:30h', hour: ''}
+        local:{day: '3º sáb. às 19:30h', hour: ''}
     },
     {church: '<a href="https://goo.gl/maps/9oS1haexWvDVWzW3A">Vila Alpina</a>', 
         gem:{day: '3ª sex. às 19:30h', hour: ''},
