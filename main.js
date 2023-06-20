@@ -160,7 +160,7 @@ data = [
         local:{day: '1º dom. às 16h30h', hour: ''}
     },
     {church: '<a href="https://goo.gl/maps/N3BFzosEHCgZuk1t6">Vila Guarani</a>', 
-        gem:{day: 'todo o sáb. às 16:30h <b>(final do GEM)</b> </br> <span class="red">2º Sábado ensaio local às 17:00h</span>', hour: ''},
+        gem:{day: 'toda a seg. às 20:00h <b>(final do GEM)</b>', hour: ''},
         local:{day: '2º sáb. às 17:00h', hour: ''}
     },
     {church: '<a href="https://goo.gl/maps/XiQgY2V7DPtrQeVK8">Vila Independência</a>', 
