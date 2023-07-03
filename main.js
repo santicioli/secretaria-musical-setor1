@@ -360,23 +360,10 @@ data.forEach(element => {
 });
 
 $(document).ready(function() {
-    $('#data_gem').DataTable( {
-        rowReorder: {
-            selector: 'td:nth-child(2)'
-        },
-        responsive: true,
-        paging: false,
-        language: {
-            search: "Pesquisar:",
-            lengthMenu: "Show _MENU_ entries",
-            info: "Mostrando _TOTAL_ igreja(s)",
-            infoEmpty: "Mostrando 0 igreja",
-            infoFiltered: "(Filtradas de _MAX_)",
-            zeroRecords: "Nenhuma igreja encontrada",
-        },
-    } );
+    
+    $.fn.dataTable.moment( 'DD/MM/YYYY' );
 
-    $('#data_local').DataTable( {
+    $('table.event').DataTable( {
         rowReorder: {
             selector: 'td:nth-child(2)'
         },
