@@ -186,7 +186,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/D8KR16teYmprGFBn6">Vila Rio Branco</a>', 
         gem:{description: 'toda a seg. às 20:30h <b>(final do GEM)</b>', day: 1, weekOfMoth: 0},
-        local:{description: '1º sáb. às 19:30h', day: 6, weekOfMoth: 1},
+        local:{description: '1º dom. às 16:00h', day: 6, weekOfMoth: 1},
     },
 ]
 
