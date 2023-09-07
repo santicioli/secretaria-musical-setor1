@@ -141,7 +141,7 @@ data = [
         local:{description: '4º dom. às 16:00h', day: 0, weekOfMoth: 4},
     },
     {church: '<a href="https://goo.gl/maps/cKUZJHp1abKdBksx6">Vila Carioca</a>', 
-        gem:{description: '1ª seg. às 19:30h', day: 1, weekOfMoth: 1},
+        gem:{description: '2ª seg. às 19:30h', day: 1, weekOfMoth: 2},
         local:{description: '4º dom. às 16:00h', day: 0, weekOfMoth: 4},
     },
     {church: '<a href="https://goo.gl/maps/524qYBqrHHKXzVHGA">Vila Clara</a>', 
