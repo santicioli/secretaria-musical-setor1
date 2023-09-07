@@ -165,7 +165,7 @@ data = [
         local:{description: '2º sáb. às 17:00h', day: 6, weekOfMoth: 2},
     },
     {church: '<a href="https://goo.gl/maps/XiQgY2V7DPtrQeVK8">Vila Independência</a>', 
-        //gem:{day: '', hour:''},
+        gem:{description: '1º sáb. às 14:00h', day: 6, weekOfMoth: 0},
         local:{description: '4º dom. às 16:00h', day: 0, weekOfMoth: 4},
     },
     {church: '<a href="https://goo.gl/maps/gGU86mzDkABGvJLV6">Vila Livieiro</a>', 
