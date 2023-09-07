@@ -165,7 +165,7 @@ data = [
         local:{description: '2º sáb. às 17:00h', day: 6, weekOfMoth: 2},
     },
     {church: '<a href="https://goo.gl/maps/XiQgY2V7DPtrQeVK8">Vila Independência</a>', 
-        gem:{description: '1º sáb. às 14:00h', day: 6, weekOfMoth: 0},
+        gem:{description: '1º sáb. às 14:00h', day: 6, weekOfMoth: 1},
         local:{description: '4º dom. às 16:00h', day: 0, weekOfMoth: 4},
     },
     {church: '<a href="https://goo.gl/maps/gGU86mzDkABGvJLV6">Vila Livieiro</a>', 
@@ -185,7 +185,7 @@ data = [
         local:{description: '2º sex. às 19:30h', day: 5, weekOfMoth: 2},
     },
     {church: '<a href="https://goo.gl/maps/D8KR16teYmprGFBn6">Vila Rio Branco</a>', 
-        gem:{description: 'toda a seg. às 20:30h <b>(final do GEM)</b>', day: 1, weekOfMoth: 0},
+        gem:{description: '2ª e 4ª seg. às 20:30h <b>(final do GEM)</b>', day: 1, weekOfMoth: 2},
         local:{description: '1º dom. às 16:00h', day: 6, weekOfMoth: 1},
     },
 ]
@@ -290,7 +290,7 @@ function calcNextLastDayOfWeek(day) {
 
 function nextEvent(day, ordenação){
     /*Onde o 'day' representa um dia da semana de 0 a 6, que vai de domingo a sabado.
-    E o 'Semana' é um valor utilizado como ordenação das datas dentro do mês.
+    E o 'weekOfMoth' é um valor utilizado como ordenação das datas dentro do mês.
     Caso não tenha nenhuma consulta é atribuido o valor -2.
     Caso tenha consulta no último dia do mês, é atribuido o valor -1.
     Caso tenha consultas todos os dias é atribuido o valor 0.
