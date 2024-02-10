@@ -16,11 +16,11 @@ data = [
         local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
 	{church: '<a href="https://goo.gl/maps/gp4VdETQsbRZiH4x9">Belém</a>', 
-        gem:{description: 'todo a sex. às 21:00h <b>(final do GEM)</b>', day: 5, weekOfMoth: 2},
+        gem:{description: '2º sex. às 19:00h</b>', day: 5, weekOfMoth: 2},
         local:{description: '4º sáb. às 19:30h', day: 6, weekOfMoth: 4},
     },
 	{church: '<a href="https://goo.gl/maps/DCdi4MBDcd7aV8TW8">Bom Retiro</a>',
-        gem:{description: 'todo o dom. às 09:10h <b>(final do GEM)</b>', day: 0, weekOfMoth: 0},
+        gem:{description: 'todo o dom. às 09:10h <b>(Fim do GEM)</b>', day: 0, weekOfMoth: 0},
         local:{description: '1º sáb. às 17:00h', day: 6, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/YiyrRsnXudyENdie6">Bosque da Saúde</a>', 
@@ -36,7 +36,7 @@ data = [
         local:{description: '2º sáb. às 16h30h', day: 6, weekOfMoth: 2},
     },
     {church: '<a href="https://goo.gl/maps/nsYJQV9yiVCrbrHm8">Caraguatá</a>', 
-        gem:{description: '1º sáb. às 15:30h <b>(final do GEM)</b>', day: 6, weekOfMoth: 1},
+        gem:{description: '1º sáb. às 15:30h <b>(Fim do GEM)</b>', day: 6, weekOfMoth: 1},
         local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/PfxX3rWpAdvDpepP9">Flor da Vila Formosa</a>', 
@@ -76,7 +76,7 @@ data = [
         local:{description: 'último dom. às 16:00h', day: 0, weekOfMoth: -1},
     },
     {church: '<a href="https://goo.gl/maps/umzXqZ6dCfM4BEhj9">Jardim Planalto</a>', 
-        gem:{description: '3ª sex. às 20:00h', day: 5, weekOfMoth: 3},
+        gem:{description: '3ª quin. às 19:30h', day: 4, weekOfMoth: 3},
         local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/64iYaNrSfnaQ94uE7">Jardim Santo Eduardo</a>', 
@@ -85,7 +85,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/45xcGxTEdY7NPyabA">Jardim São Roberto</a>', 
         gem:{day: '1º sáb. às 10:30h', hour: ''},
-        gem:{description: '1º sáb. às 10:30h <b>(final do GEM)</b>', day: 6, weekOfMoth: 1},
+        gem:{description: '1º sáb. às 10:30h <b>(Fim do GEM)</b>', day: 6, weekOfMoth: 1},
         local:{description: 'último dom. às 16:00h', day: 0, weekOfMoth: -1},
     },
     {church: '<a href="https://goo.gl/maps/rS7zFcXcya9jzF8u5">Jardim São Savério</a>', 
@@ -149,7 +149,7 @@ data = [
         local:{description: '4º dom. às 16:00h', day: 0, weekOfMoth: 4},
     },
     {church: '<a href="https://goo.gl/maps/utTnvA1AbMqRy87CA">Vila Diva</a>', 
-        gem:{description: 'todo o sáb. às 16:00h <b>(final do GEM)</b>', day: 6, weekOfMoth: 0},
+        gem:{description: 'todo o sáb. às 16:00h <b>(Fim do GEM)</b>', day: 6, weekOfMoth: 0},
         local:{description: 'último sáb. às 17:00h', day: 6, weekOfMoth: -1},
     },
     {church: '<a href="https://goo.gl/maps/8iaoff3gQGLGvUSH8">Vila Ema</a>', 
@@ -161,7 +161,7 @@ data = [
         local:{description: '1º dom. às 16h30h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/N3BFzosEHCgZuk1t6">Vila Guarani</a>', 
-        gem:{description: 'toda a seg. às 20:00h <b>(final do GEM)</b>', day: 1, weekOfMoth: 0},
+        gem:{description: 'toda a seg. às 20:00h <b>(Fim do GEM)</b>', day: 1, weekOfMoth: 0},
         local:{description: '2º sáb. às 17:00h', day: 6, weekOfMoth: 2},
     },
     {church: '<a href="https://goo.gl/maps/XiQgY2V7DPtrQeVK8">Vila Independência</a>', 
@@ -185,7 +185,7 @@ data = [
         local:{description: '2º sex. às 19:30h', day: 5, weekOfMoth: 2},
     },
     {church: '<a href="https://goo.gl/maps/D8KR16teYmprGFBn6">Vila Rio Branco</a>', 
-        gem:{description: '2ª e 4ª seg. às 20:30h <b>(final do GEM)</b>', day: 1, weekOfMoth: 2},
+        gem:{description: '2ª e 4ª seg. às 20:30h <b>(Fim do GEM)</b>', day: 1, weekOfMoth: 2},
         local:{description: '1º dom. às 16:00h', day: 6, weekOfMoth: 1},
     },
 ]
@@ -320,24 +320,6 @@ function nextEvent(day, ordenação){
 }
 
 data.forEach(element => {
-    if(element.hasOwnProperty('gem')){
-
-        var respostaFinal = nextEvent(element.gem.day, element.gem.weekOfMoth);
-        let church = 
-        `<tr>
-            <td>
-                ${element.church}
-            </td>
-            <td>
-                ${element.gem?.description}
-            </td>
-            <td>
-                ${respostaFinal}
-            </td>
-        </tr>`
-
-        $("#tb_gem").append(church)
-    }
 
     if(element.hasOwnProperty('local')){
 
@@ -356,6 +338,25 @@ data.forEach(element => {
         </tr>`
 
         $("#tb_local").append(church)
+    }
+
+    if(element.hasOwnProperty('gem')){
+
+        var respostaFinal = nextEvent(element.gem.day, element.gem.weekOfMoth);
+        let church = 
+        `<tr>
+            <td>
+                ${element.church}
+            </td>
+            <td>
+                ${element.gem?.description}
+            </td>
+            <td>
+                ${respostaFinal}
+            </td>
+        </tr>`
+
+        $("#tb_gem").append(church)
     }
 });
 
