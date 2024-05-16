@@ -49,7 +49,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/x1dM8vfsD8CH9LRbA">Jabaquara</a>', 
         gem:{description: 'última qui. às 19:30h', day: 4, weekOfMoth: -1},
-        local:{description: 'último sáb. às 19:30h', day: 6, weekOfMoth: -1},
+        local:{description: 'último dom. às 16:00h', day: 0, weekOfMoth: -1},
     },
     {church: '<a href="https://goo.gl/maps/x1dM8vfsD8CH9LRbA">Jardim da Glória</a>', 
         gem:{description: '2º sáb. às 17:00h', day: 6, weekOfMoth: 2},
