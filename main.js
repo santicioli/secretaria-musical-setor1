@@ -36,7 +36,7 @@ data = [
         local:{description: '2º sáb. às 16h30h', day: 6, weekOfMoth: 2},
     },
     {church: '<a href="https://goo.gl/maps/nsYJQV9yiVCrbrHm8">Caraguatá</a>', 
-        gem:{description: '1º sáb. às 15:30h <b>(Fim do GEM)</b>', day: 6, weekOfMoth: 1},
+        gem:{description: '1º ter. às 19:30h', day: 2, weekOfMoth: 1},
         local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/PfxX3rWpAdvDpepP9">Flor da Vila Formosa</a>', 
