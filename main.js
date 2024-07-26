@@ -41,7 +41,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/PfxX3rWpAdvDpepP9">Flor da Vila Formosa</a>', 
         //gem:{day: '', hour:''},
-        local:{description: '3º sáb. às 17:00h', day: 6, weekOfMoth: 3},
+        local:{description: '3º sáb. às 16:30h', day: 6, weekOfMoth: 3},
     },
     {church: '<a href="https://goo.gl/maps/j5YGNgbdPyehFMUi6">Ipiranga</a>', 
         //gem:{day: '', hour:''},
@@ -80,11 +80,10 @@ data = [
         local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/64iYaNrSfnaQ94uE7">Jardim Santo Eduardo</a>', 
-        gem:{description: '3ª sex. às 19:30h', day: 5, weekOfMoth: 3},
-        local:{description: '1º sáb. às 17:00h', day: 6, weekOfMoth: 1},
+        gem:{description: '3ª sex. às 19:00h', day: 5, weekOfMoth: 3},
+        local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/45xcGxTEdY7NPyabA">Jardim São Roberto</a>', 
-        gem:{day: '1º sáb. às 10:30h', hour: ''},
         gem:{description: '1º sáb. às 10:30h <b>(Fim do GEM)</b>', day: 6, weekOfMoth: 1},
         local:{description: 'último dom. às 16:00h', day: 0, weekOfMoth: -1},
     },
@@ -158,7 +157,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/3uomPagvm6kXvm84A">Vila Formosa</a>', 
         gem:{description: 'último dom. às 09:00h', day: 0, weekOfMoth: -1},
-        local:{description: '1º dom. às 16h30h', day: 0, weekOfMoth: 1},
+        local:{description: '4º dom. às 16h30h', day: 0, weekOfMoth: 4},
     },
     {church: '<a href="https://goo.gl/maps/N3BFzosEHCgZuk1t6">Vila Guarani</a>', 
         gem:{description: 'toda a seg. às 20:00h <b>(Fim do GEM)</b>', day: 1, weekOfMoth: 0},
@@ -289,7 +288,7 @@ function calcNextLastDayOfWeek(day) {
 }
 
 function nextEvent(day, ordenação){
-    /*Onde o 'day' representa um dia da semana de 0 a 6, que vai de domingo a sabado.
+    /*Onde o 'day' representa um dia da semana de 0 (dom) a 6 (sáb), que vai de domingo a sabado.
     E o 'weekOfMoth' é um valor utilizado como ordenação das datas dentro do mês.
     Caso não tenha nenhuma consulta é atribuido o valor -2.
     Caso tenha consulta no último dia do mês, é atribuido o valor -1.
