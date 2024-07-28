@@ -80,7 +80,7 @@ data = [
         local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/64iYaNrSfnaQ94uE7">Jardim Santo Eduardo</a>', 
-        gem:{description: '3ª sex. às 19:00h', day: 5, weekOfMoth: 3},
+        gem:{description: '2ª qua. às 19:00h', day: 3, weekOfMoth: 2},
         local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/45xcGxTEdY7NPyabA">Jardim São Roberto</a>', 
