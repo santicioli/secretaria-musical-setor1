@@ -177,7 +177,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/LvpTgn7gaPMuFzcm9">Vila Moraes</a>', 
         //gem:{day: '', hour:''},
-        local:{description: 'último sáb. às 17:00h', day: 6, weekOfMoth: -1},
+        local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/JnjjXa4nJMhesvJd8">Vila Prudente</a>', 
         gem:{description: 'última seg. às 19:30h', day: 1, weekOfMoth: -1},
@@ -185,7 +185,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/D8KR16teYmprGFBn6">Vila Rio Branco</a>', 
         gem:{description: '2ª e 4ª seg. às 20:30h <b>(Fim do GEM)</b>', day: 1, weekOfMoth: 2},
-        local:{description: '1º dom. às 16:00h', day: 6, weekOfMoth: 1},
+        local:{description: '1º sab. às 19:30h', day: 6, weekOfMoth: 1},
     },
 ]
 
