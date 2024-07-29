@@ -149,7 +149,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/utTnvA1AbMqRy87CA">Vila Diva</a>', 
         gem:{description: 'todo o sáb. às 16:00h <b>(Fim do GEM)</b>', day: 6, weekOfMoth: 0},
-        local:{description: 'último sáb. às 17:00h', day: 6, weekOfMoth: -1},
+        local:{description: 'último sáb. às 16:30h', day: 6, weekOfMoth: -1},
     },
     {church: '<a href="https://goo.gl/maps/8iaoff3gQGLGvUSH8">Vila Ema</a>', 
         gem:{description: 'última ter. às 19:30h', day: 2, weekOfMoth: -1},
