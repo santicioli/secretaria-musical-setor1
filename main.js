@@ -133,7 +133,7 @@ data = [
     },
     {church: '<a href="https://goo.gl/maps/SVZoZkWf3p7i5wif9">Vila Bela</a>', 
         //gem:{day: '', hour:''},
-        local:{description: '1º sex. às 19:30h', day: 5, weekOfMoth: 1},
+        local:{description: '1º sex. às 20:00h', day: 5, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/SVZoZkWf3p7i5wif9">Vila California</a>', 
         gem:{description: 'última qua. às 20:00h', day: 3, weekOfMoth: -1},
