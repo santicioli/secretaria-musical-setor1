@@ -132,7 +132,7 @@ data = [
         local:{description: '1º dom. às 16:00h', day: 0, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/SVZoZkWf3p7i5wif9">Vila Bela</a>', 
-        gem:{description: 'toda a ter. às 21:30h <b>(Fim do GEM)</b>', day: 2, weekOfMoth: 0},
+        gem:{description: 'toda a ter. às 21:00h <b>(Fim do GEM)</b>', day: 2, weekOfMoth: 0},
         local:{description: '1º sex. às 20:00h', day: 5, weekOfMoth: 1},
     },
     {church: '<a href="https://goo.gl/maps/SVZoZkWf3p7i5wif9">Vila California</a>', 
