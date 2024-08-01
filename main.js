@@ -60,7 +60,7 @@ data = [
         local:{description: '4º dom. às 16:00h', day: 0, weekOfMoth: 4},
     },
     {church: '<a href="https://goo.gl/maps/h6uKTbYrhtYYaYVHA">Jardim Independência</a>', 
-        //gem:{day: '', hour:''},
+        gem:{description: '4º sáb. às 15:00h', day: 6, weekOfMoth: 4},
         local:{description: '2º sáb. às 19:30h', day: 6, weekOfMoth: 2},
     },
     {church: '<a href="https://goo.gl/maps/LfUxnUYqHgKgxWBZ9">Jardim Maria Estela</a>', 
