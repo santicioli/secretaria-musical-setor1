@@ -52,8 +52,11 @@ data = [
         local:{description: 'último dom. às 16:00h', day: 0, weekOfMoth: -1},
     },
     {church: '<a href="https://goo.gl/maps/x1dM8vfsD8CH9LRbA">Jardim da Glória</a>', 
-        gem:{description: '2º sáb. às 17:00h', day: 6, weekOfMoth: 2},
+        gem:{description: '<b>1ºensaio</b> - 2º sáb. às 17:00h', day: 6, weekOfMoth: 2},
         local:{description: '4º dom. às 16:00h', day: 0, weekOfMoth: 4},
+    },
+    {church: '<a href="https://goo.gl/maps/x1dM8vfsD8CH9LRbA">Jardim da Glória</a>', 
+        gem:{description: '<b>2ºensaio</b> - 3º dom. às 16:00h', day: 0, weekOfMoth: 3, mes:'par'},
     },
     {church: '<a href="https://goo.gl/maps/oBvAgiFfnpestN4c8">Jardim Elba</a>', 
         gem:{description: '2º sáb. às 15:00h', day: 6, weekOfMoth: 2},
@@ -354,8 +357,12 @@ data.forEach(element => {
                 ${respostaFinal}
             </td>
         </tr>`
-
-        $("#tb_gem").append(church)
+        if (element.gem?.mes == 'par'){
+            if(new Date().getMonth()%2 != 0)//verificar ensaios somente aos meses pares
+                $("#tb_gem").append(church)
+        }
+        else
+            $("#tb_gem").append(church)
     }
 });
 
