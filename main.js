@@ -52,11 +52,8 @@ data = [
         local:{description: 'último dom. às 16:00h', day: 0, weekOfMoth: -1},
     },
     {church: '<a href="https://goo.gl/maps/x1dM8vfsD8CH9LRbA">Jardim da Glória</a>', 
-        gem:{description: '<b>1ºensaio</b> - 2º sáb. às 17:00h', day: 6, weekOfMoth: 2},
+        gem:{description: 'sábado antes do ensaio local', day: '', weekOfMoth: ''},
         local:{description: '4º dom. às 16:00h', day: 0, weekOfMoth: 4},
-    },
-    {church: '<a href="https://goo.gl/maps/x1dM8vfsD8CH9LRbA">Jardim da Glória - meses pares</a>', 
-        gem:{description: '<b>2ºensaio</b> - 3º dom. às 16:00h', day: 0, weekOfMoth: 3, mes:'par'},
     },
     {church: '<a href="https://goo.gl/maps/oBvAgiFfnpestN4c8">Jardim Elba</a>', 
         gem:{description: '2º sáb. às 15:00h', day: 6, weekOfMoth: 2},
@@ -321,6 +318,8 @@ function nextEvent(day, ordenação){
     }
 }
 
+let respostaFianlGemJdGloria = ''
+
 data.forEach(element => {
 
     if(element.hasOwnProperty('local')){
@@ -340,11 +339,32 @@ data.forEach(element => {
         </tr>`
 
         $("#tb_local").append(church)
-    }
 
+        if (element.church.includes('Jardim da Glória')) {
+
+            const arrDataExclusao = respostaFinal.split('/')
+            const stringFormatada = arrDataExclusao[1] + '-' + arrDataExclusao[0] + '-' + arrDataExclusao[2]
+
+            respostaFianlGemJdGloria = new Date(stringFormatada)
+            respostaFianlGemJdGloria.setDate(respostaFianlGemJdGloria.getDate() - 1);
+
+            const day = String(respostaFianlGemJdGloria.getDate()).padStart(2, '0');
+            const month = String(respostaFianlGemJdGloria.getMonth() + 1).padStart(2, '0'); // Meses começam em 0
+            const year = respostaFianlGemJdGloria.getFullYear();
+            
+            respostaFianlGemJdGloria = `${day}/${month}/${year}`;
+        }
+    }
+    
     if(element.hasOwnProperty('gem')){
 
         var respostaFinal = nextEvent(element.gem.day, element.gem.weekOfMoth);
+
+        if (element.church.includes('Jardim da Glória')) {
+            console.log(element.church, respostaFinal, respostaFianlGemJdGloria)
+            respostaFinal = respostaFianlGemJdGloria
+        }
+
         let church = 
         `<tr>
             <td>
@@ -357,12 +377,7 @@ data.forEach(element => {
                 ${respostaFinal}
             </td>
         </tr>`
-        if (element.gem?.mes == 'par'){
-            if(new Date().getMonth()%2 != 0)//verificar ensaios somente aos meses pares
-                $("#tb_gem").append(church)
-        }
-        else
-            $("#tb_gem").append(church)
+        $("#tb_gem").append(church)
     }
 });
 
