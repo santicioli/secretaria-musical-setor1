@@ -361,7 +361,6 @@ data.forEach(element => {
         var respostaFinal = nextEvent(element.gem.day, element.gem.weekOfMoth);
 
         if (element.church.includes('Jardim da Glória')) {
-            console.log(element.church, respostaFinal, respostaFianlGemJdGloria)
             respostaFinal = respostaFianlGemJdGloria
         }
 
